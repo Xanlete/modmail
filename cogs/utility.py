@@ -38,7 +38,7 @@ from core.paginator import EmbedPaginatorSession, MessagePaginatorSession
 logger = getLogger(__name__)
 
 
-class ModmailHelpCommand(commands.ModmailCommand):
+class ModmailHelpCommand(commands.HelpCommand):
     async def command_callback(self, ctx, *, command=None):
         """Ovrwrites original command_callback to ensure `help` without any arguments
         returns with checks, `help all` returns without checks"""
