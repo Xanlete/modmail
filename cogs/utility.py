@@ -252,7 +252,7 @@ class Utility(commands.Cog):
         self._original_help_command = bot.help_command
         self.bot.help_command = ModmailHelpCommand(
             command_attrs={
-                "help": "Shows this help message.",
+                "modmail": "Shows this help message.",
                 "checks": [checks.has_permissions_predicate(PermissionLevel.REGULAR)],
             },
         )
